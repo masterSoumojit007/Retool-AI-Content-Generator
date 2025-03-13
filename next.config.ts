@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['cdn-icons-png.flaticon.com'],
+    unoptimized: true
+  }
 };
 
 export default nextConfig;

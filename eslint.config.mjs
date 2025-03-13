@@ -11,6 +11,7 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  "plugin:@typescript-eslint/recommended", // Optionally add TypeScript ESLint plugin for better linting
 ];
 
 export default eslintConfig;
